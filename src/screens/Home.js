@@ -1,12 +1,12 @@
 import React from 'react';
 
 import CustomView from '../components/CustomView';
-import CustomText from '../components/CustomText';
+import CoinFlip from '../components/CoinFlip';
 
-function Home({navigation}) {
+function Home() {
   return (
     <CustomView type="middleAllContainer">
-      <CustomText text="Home Screen." type="basic" />
+      <CoinFlip />
     </CustomView>
   );
 }

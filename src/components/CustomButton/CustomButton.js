@@ -27,7 +27,7 @@ const CustomButton = ({
     style={[
       styles[type],
       Layout.margin(marginTop, marginRight, marginBottom, marginLeft),
-      shadow && Layout.boxShadow(Colors.SHADOW),
+      shadow && Layout.boxShadow(Colors.GRAY),
       inactive && {opacity: 0.5},
       style,
     ]}

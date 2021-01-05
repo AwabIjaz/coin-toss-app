@@ -37,17 +37,34 @@ const errorTextBase = {
   ...textBase,
   color: Colors.ERROR,
 };
+const primaryBase = {
+  ...textBase,
+  color: Colors.WHITE,
+};
+const secondaryBase = {
+  ...textBase,
+  color: Colors.SECONDARY,
+};
+const small = {
+  fontSize: Typography.FONT_SIZE_6,
+};
 const styles = StyleSheet.create({
   basic: {
     ...textBase,
   },
   primaryText: {
-    ...textBase,
-    color: Colors.WHITE,
+    ...primaryBase,
+  },
+  smallPrimaryText: {
+    ...primaryBase,
+    ...small,
   },
   secondaryText: {
-    ...textBase,
-    color: Colors.SECONDARY,
+    ...secondaryBase,
+  },
+  smallSecondaryText: {
+    ...secondaryBase,
+    ...small,
   },
   errorText: {
     ...errorTextBase,

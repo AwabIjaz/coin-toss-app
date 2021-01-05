@@ -7,8 +7,8 @@ const base = {
 };
 const main = {
   ...base,
-  width: Layout.scaleWidth(90),
-  height: Layout.scaleHeight(8),
+  width: Layout.scaleWidth(60),
+  height: Layout.scaleHeight(6),
   borderTopRightRadius: 8,
   borderBottomLeftRadius: 8,
 };
@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
   },
   secondaryBtn: {
     ...main,
-    backgroundColor: Colors.SECONDARY,
+    borderWidth: 1,
+    borderColor: Colors.SECONDARY,
   },
 });
 
