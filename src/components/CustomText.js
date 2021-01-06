@@ -66,6 +66,11 @@ const styles = StyleSheet.create({
     ...secondaryBase,
     ...small,
   },
+  smallPinkText: {
+    ...textBase,
+    ...small,
+    color: Colors.PRIMARY,
+  },
   errorText: {
     ...errorTextBase,
     fontSize: Typography.FONT_SIZE_8,
@@ -73,7 +78,7 @@ const styles = StyleSheet.create({
 });
 
 CustomText.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   type: PropTypes.string,
   bold: PropTypes.bool,
   textWidth: PropTypes.number,

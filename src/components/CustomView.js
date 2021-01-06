@@ -38,7 +38,6 @@ const middleY = {
 };
 const horizontalBase = {
   flexDirection: 'row',
-  backgroundColor: Colors.WHITE,
 };
 const styles = StyleSheet.create({
   basic: {
@@ -64,8 +63,7 @@ const styles = StyleSheet.create({
     ...horizontalBase,
     ...middleX,
     justifyContent: 'space-between',
-    alignSelf: 'center',
-    width: Layout.scaleWidth(90),
+    width: '100%',
   },
 });
 

@@ -14,6 +14,7 @@ export const FONT_SIZE_12 = scaleFont(12);
 export const FONT_SIZE_10 = scaleFont(10);
 export const FONT_SIZE_8 = scaleFont(8);
 export const FONT_SIZE_6 = scaleFont(6);
+export const FONT_SIZE_4 = scaleFont(4);
 
 // FONT STYLE
 export const FONT_REGULAR = {

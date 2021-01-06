@@ -12,15 +12,34 @@ const main = {
   borderTopRightRadius: 8,
   borderBottomLeftRadius: 8,
 };
+const secondaryBase = {
+  borderWidth: 1,
+  borderColor: Colors.SECONDARY,
+};
+const roundBase = {
+  width: Layout.scaleWidth(30),
+  height: Layout.scaleWidth(30),
+  borderRadius: Layout.scaleWidth(15),
+};
 const styles = StyleSheet.create({
   primaryBtn: {
     ...main,
     backgroundColor: Colors.PRIMARY,
   },
+  primaryRoundBtn: {
+    ...base,
+    borderWidth: 1,
+    borderColor: Colors.PRIMARY,
+    ...roundBase,
+  },
   secondaryBtn: {
     ...main,
-    borderWidth: 1,
-    borderColor: Colors.SECONDARY,
+    ...secondaryBase,
+  },
+  secondaryRoundBtn: {
+    ...base,
+    ...secondaryBase,
+    ...roundBase,
   },
 });
 
